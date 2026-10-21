@@ -1,19 +1,15 @@
 {config,pkgs,...}:
+
 {
-networking={
-
+networking = {
 hostName = "nixos";
-
-wireless ={
-
-enable = true;
-
-};
-
-networkmanager={
+wireless = {enable = true;};
+networkmanager = {
 enable = true;
 };
-
+firewall = {
+enable = true;
+};
 };
 
 }
